@@ -1,0 +1,250 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+ul.menu {
+    /* Aplicar las propiedades float y clear para cargar el menú hacia el lado requerido. */
+    clear: both;
+    /* float: right; */
+    /* Poner el ancho del menú al total de la página. */
+    /* width: 100%; */
+    /* Eliminar las viñetas automáticas y todos los márgenes y espaciados aplicados por defecto: */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.menu li {
+    /* La clave para el menú horizontal reside en modificar la propiedad float de los elementos <li> del menú */
+    float: right;
+    margin: 7px;
+ }
+
+ul.menu li a {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #6D7B93;
+}
+
+ul.menu li a.MenuButton {
+    background-color: #3555D3;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+ }
+
+.container{
+    /* background-color: #fcffe2; */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item{
+    margin: .3em;
+    /* padding: 0; */
+    /* margin: 0; */
+    border: 0;
+    /* color: #fcffe2; */
+    float: right;
+    width: 100%;
+}
+
+.logo
+{
+    width: 160px;
+    color: #3656D4;
+    font-weight: bold;
+    float: left;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content:right;
+}
+
+.imgContainerLeft{
+    display: flex;
+    justify-content:left;
+}
+
+h1{
+    font-size: 300%;
+    color:midnightblue;
+    text-align: center;
+}
+
+h2{
+    font-size: 200%;
+    color:midnightblue;
+    text-align: center;
+}
+
+p{
+    color: dimgray;
+    text-align: justify;
+}
+
+p.marked{
+    color: midnightblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+p.nomargin{
+    margin: 0;
+}
+
+div.centered{
+    text-align: center;
+}
+
+div.centered table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rectangulocentrado {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 600px;
+    height: 80px;
+
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.containerLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemLogos {
+    flex: 1 1 150px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.infoVaccine {
+    width: 50px;
+    height: auto;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5%;
+}
+
+.collapsible {
+    background-color: white;
+    color: midnightblue;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover .collapsibleContact:hover {
+    background-color: #3555D3;
+    color: white;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    width: 60%;
+  }
+
+  .infoContact {
+    width: 180px;
+    height: 180px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5%;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.active, .collapsibleContact:hover {
+    background-color: #3555D3;
+    color: white;
+  }
+
+  .collapsibleContact {
+    background-color: #F1F5FF ;
+    color: midnightblue;
+    cursor: pointer;   
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8%;
+    text-align: center;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .containerContact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.horizontal-center {
+	margin: 0;
+	position: relative;
+  	left: 50%;
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.contactHeader {
+    margin: 0;
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact {
+    margin: 0;
+    font-size: 10px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+footer {
+    height: 250px;
+    background-color: #EEF3FF;
+    font-size: 14px;
+}
+
+footer div {
+    width: 150px;
+}
+
+.fTitle {
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 16px;
+}
